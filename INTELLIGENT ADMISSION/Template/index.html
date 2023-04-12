@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admission Prediction</title>
+</head>
+
+<body bgcolor='white' text='black'>
+<h1>
+<b>
+<i>
+<font size=15>
+Admission Prediction
+</font>
+</i>
+</b>
+</h1>
+<div style="background-color:white">
+<hr>
+<hr></div>
+<h2> Enter the details to check whether you are Eligible or not!</h2>
+<h4> 
+
+<form action="{{url_for('predict')}}" method="post">
+
+	<p> Enter GRE : <input type='text' name='GRE Score' placeholder='Enter GRE Score' Enter Numerical part required='required' />
+    <p> Enter TOEFL : <input type='text' name='TOEFL Score' placeholder='Enter TOEFL Score' Enter 0 for Male 1 for Female required='required' />
+    &nbsp;`````
+    <p>ENter University Rating : <input type='text' name='University Rating ' Enter Numerical part required='required' /></p>
+    <p> Enter sop : <input type='text' name='SOP' placeholder='Enter 0 for no 1 for yes' required='required' /></p>
+    <p> Enter LOR : <input type='text' name='LOR' placeholder='Enter 0 for no 1 for yes' required='required' /></p>
+    <p> Enter CGPA : <input type='text' name='CGPA' placeholder='ApplicantIncome' required='required' /></p>
+    <p> Enter Researcjh Status: <input type='text' name='Research' placeholder='Enter 0 for no 1 for yes' required='required' /></p>
+    />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+</form>
+</h4>
+<h2>
+<b>
+{{ prediction_text }}
+</b>
+</h2>
+</body>
+</html>

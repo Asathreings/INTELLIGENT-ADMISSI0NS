@@ -1,2 +1,5 @@
 # INTELLIGENT-ADMISSI0NS
 THE FUTURE OF DECISION MAKING WITH MACHINE LEARNING
+
+PPT presentation video link :
+https://youtu.be/YZp0b_IEvlM
